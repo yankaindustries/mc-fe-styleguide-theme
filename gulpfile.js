@@ -47,9 +47,9 @@ $color-link: ${skin.links};
 
 gulp.task('css', ['css:skins'], function() {
   return gulp.src('./assets/scss/skins/*.scss')
-    .pipe(stylelint({
-        reporters: [{formatter: 'string', console: true}]
-    }))
+    // .pipe(stylelint({
+    //     reporters: [{formatter: 'string', console: true}]
+    // }))
     .pipe(sassGlob())
     .pipe(sass({
         includePaths: 'node_modules'

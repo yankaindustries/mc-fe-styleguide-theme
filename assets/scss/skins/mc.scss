@@ -1,0 +1,52 @@
+$color-link: #be3f3f;
+
+@import "../theme";
+@import "../core/all";
+@import "../components/**/*.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+  background: white;
+  font-family: 'lato';
+}
+
+.mc-logo {
+  display: block;
+  width: 75%;
+  margin: -20px auto 10px;
+}
+
+[dir="ltr"] .Frame-handle {
+  pointer-events: none;
+  display: none;
+}
+
+a {
+  font-family: 'lato';
+  color: rgba(white, .35);
+
+  &:hover {
+    color: white;
+  }
+}
+
+.Browser-tab.is-active a {
+  border-color: $color-link;
+}
+
+.Frame-header {
+  display: none;
+}
+
+.Frame-panel--sidebar {
+  background: #111;
+}
+
+.Status-dot {
+  background: transparent;
+}
+
+.Tree-title {
+  font-family: 'lato';
+  color: white;
+}

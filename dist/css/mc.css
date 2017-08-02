@@ -4,6 +4,7 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -506,10 +507,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   box-sizing: inherit; }
 
 ::-moz-selection {
-  background-color: rgba(102, 119, 0, 0.075); }
+  background-color: rgba(190, 63, 63, 0.075); }
 
 ::selection {
-  background-color: rgba(102, 119, 0, 0.075); }
+  background-color: rgba(190, 63, 63, 0.075); }
 
 html {
   position: relative;
@@ -564,12 +565,12 @@ ul {
   list-style: none; }
 
 a {
-  color: #670;
+  color: #be3f3f;
   transition: all 0.15s ease-out; }
   a:active {
-    color: #670; }
+    color: #be3f3f; }
   a:hover {
-    color: #242b00; }
+    color: #852c2c; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -658,7 +659,7 @@ h6 {
 .AssetList-name {
   color: rgba(83, 83, 99, 0.5); }
   .AssetList-name strong {
-    color: #670;
+    color: #be3f3f;
     font-weight: normal; }
 
 .AssetList-link {
@@ -1279,7 +1280,7 @@ h6 {
     .Browser-tab a:hover {
       border-bottom-color: #ccc; }
   .Browser-tab.is-active a {
-    border-bottom-color: #670;
+    border-bottom-color: #be3f3f;
     font-weight: bolder; }
   .Browser-tab.is-disabled a {
     opacity: 0.5; }
@@ -1410,7 +1411,7 @@ h6 {
   border-color: rgba(83, 83, 99, 0.25); }
   .select2-container--focus .select2-selection.select2-selection--single {
     outline: none;
-    border-color: #670; }
+    border-color: #be3f3f; }
 
 .select2-results__option {
   font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
@@ -1419,8 +1420,8 @@ h6 {
     background-color: rgba(83, 83, 99, 0.1) !important; }
 
 .select2-results__option--highlighted[aria-selected] {
-  background-color: #bd2 !important;
-  color: #330 !important; }
+  background-color: #14f !important;
+  color: #fff !important; }
 
 .FileBrowser-item {
   display: none; }
@@ -1583,10 +1584,10 @@ h6 {
           align-items: center;
   position: relative;
   z-index: 10;
-  background-color: #bd2;
+  background-color: #14f;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(0, 0, 0, 0.1);
   text-overflow: ellipsis;
-  color: #330; }
+  color: #fff; }
 
 .Header-title {
   padding: 0.75rem 1rem;
@@ -1598,8 +1599,8 @@ h6 {
     text-decoration: none; }
 
 .Header-button {
-  -webkit-border-end: 1px solid rgba(51, 51, 0, 0.25);
-          border-inline-end: 1px solid rgba(51, 51, 0, 0.25);
+  -webkit-border-end: 1px solid rgba(255, 255, 255, 0.25);
+          border-inline-end: 1px solid rgba(255, 255, 255, 0.25);
   display: block;
   border: 0;
   height: 3rem;
@@ -1609,20 +1610,20 @@ h6 {
   color: inherit;
   cursor: pointer; }
   [dir="ltr"] .Header-button {
-    border-right: 1px solid rgba(51, 51, 0, 0.25); }
+    border-right: 1px solid rgba(255, 255, 255, 0.25); }
   [dir="rtl"] .Header-button {
-    border-left: 1px solid rgba(51, 51, 0, 0.25); }
+    border-left: 1px solid rgba(255, 255, 255, 0.25); }
   .Header-button:focus, .Header-button:active {
     outline: none; }
   .Header-button:hover {
-    background-color: rgba(51, 51, 0, 0.05); }
+    background-color: rgba(255, 255, 255, 0.05); }
   .Header-button:active {
-    background-color: rgba(51, 51, 0, 0.1); }
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .Header-navToggle svg {
   display: none;
   margin: 0 auto;
-  fill: #330; }
+  fill: #fff; }
 
 .Frame .Header-navToggleIcon--open {
   display: block; }
@@ -1801,7 +1802,7 @@ h6 {
   text-decoration: none; }
 
 .Pen-previewLink svg {
-  fill: #670;
+  fill: #be3f3f;
   opacity: 0.75; }
 
 .Pen-previewLink:hover svg {
@@ -2336,3 +2337,38 @@ h6 {
   [dir="rtl"] .Tree-depth-8 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-8 .Tree-entityLink {
     padding-right: 8rem; }
+
+body {
+  background: white;
+  font-family: 'lato'; }
+
+.mc-logo {
+  display: block;
+  width: 75%;
+  margin: -20px auto 10px; }
+
+[dir="ltr"] .Frame-handle {
+  pointer-events: none;
+  display: none; }
+
+a {
+  font-family: 'lato';
+  color: rgba(255, 255, 255, 0.35); }
+  a:hover {
+    color: white; }
+
+.Browser-tab.is-active a {
+  border-color: #be3f3f; }
+
+.Frame-header {
+  display: none; }
+
+.Frame-panel--sidebar {
+  background: #111; }
+
+.Status-dot {
+  background: transparent; }
+
+.Tree-title {
+  font-family: 'lato';
+  color: white; }

@@ -1,3 +1,4 @@
+<img class="mc-logo" src="/theme/mc-home-logo.svg"/>
 <nav class="Navigation">
 {% for navPartial in frctl.theme.get('nav') %}
     {% include 'partials/navigation/' + navPartial + '.nunj' %}

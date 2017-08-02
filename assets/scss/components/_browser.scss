@@ -32,14 +32,14 @@
 
 .Browser-tab {
     display: flex;
-    flex: auto;
+    flex: none;
     white-space: nowrap;
 
     a {
         @include font(caption);
         @include link-default($color-text, none);
         width: 100%;
-        padding: 0.75rem 0.75rem 0.875rem;
+        padding: 0.75rem 1.5rem 0.875rem;
         border-bottom: 0.125rem solid transparent;
         text-align: center;
 
@@ -67,18 +67,18 @@
     display: none;
     overflow: auto;
     width: 100%;
-    background-color: $color-background-offset;
-    padding: 0.75rem;
+    background-color: white;
+    padding: 1.4rem;
 
     &.is-active {
         display: flex;
     }
 
     .Code {
-        background-color: $color-background-offset;
+        background-color: white;
 
         pre {
-            background-color: $color-background-offset;
+            background-color: white;
             padding: 0;
         }
     }
