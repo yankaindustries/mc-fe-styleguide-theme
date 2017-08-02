@@ -1,5 +1,5 @@
 {
-  "name": "@frctl/mandelbrot",
+  "name": "@masterclass/mc-fe-styleguide-theme",
   "version": "1.1.0",
   "description": "The default theme for Fractal.",
   "main": "index.js",
