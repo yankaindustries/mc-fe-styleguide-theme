@@ -27,11 +27,16 @@ a {
 
   &:hover {
     color: white;
+    background-color: rgba(white, .05);    
   }
 }
 
 .Browser-tab.is-active a {
   border-color: $color-link;
+}
+
+.Browser-panel {
+  padding: 1.6rem 1.4rem;
 }
 
 .Frame-header {
@@ -48,5 +53,24 @@ a {
 
 .Tree-title {
   font-family: 'lato';
+  color: white;
+}
+
+.Tree-collectionLabel span::before {
+  top: 0.35rem;
+}
+
+.Tree-collectionLabel {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.Tree-collectionLabel:hover, .Tree-entityLink:hover {
+  background-color: rgba(white, .02);
+  color: white;
+  cursor: pointer;
+}
+
+.is-current .Tree-entityLink {
+  background-color: rgba(white, .05);
   color: white;
 }

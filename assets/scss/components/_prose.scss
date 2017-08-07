@@ -8,6 +8,10 @@
         margin-bottom: 0.75em;
     }
 
+    > *:last-child {
+        margin-bottom: 3em;
+    }
+
     ul,
     ol {
         @include padding-inline(start, 1.25em);
