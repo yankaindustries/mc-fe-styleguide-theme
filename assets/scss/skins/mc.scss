@@ -78,3 +78,30 @@ a {
 .Prose p code, .Prose li code {
   padding: 0;
 }
+
+.Pen-header {
+  padding-bottom: 1.4rem;
+  max-height: 3.5rem;
+}
+
+.Pen-title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: .015em;
+  font-weight: 600;
+  
+  span {
+    margin: 0 7px;
+    color: rgba(black, .3);
+  }
+}
+
+[dir="ltr"] .Pen-header .Status, .Pen-header .Status {
+  margin-left: 0;
+}
+
+.Status-label {
+  margin-top: 2px;
+  margin-left: 8px;
+  font-size: 0.65rem;
+}

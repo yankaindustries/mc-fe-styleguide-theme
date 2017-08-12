@@ -33,6 +33,25 @@ class Pen {
             this._previewPanel.css('height', '100%');
         }
 
+        const titleCrumbs = () => {
+            let title = $('.Pen-title')
+            let parts = title.attr('data-path').split('/');
+            let start = parts.indexOf('components') + 1;
+            let component = parts.pop().replace('.slim','');
+            let path = parts.slice(start)
+            let paths = path.map((str) => {
+                return str.replace('-', ' ').replace(/[^a-zA-Z\s]+/g, '').trim();
+            })
+            if (paths[paths.length - 1] === component) {
+                paths = paths.join('<span>/</span>')
+            } else {
+                paths = paths.join('<span>/</span>') + '<span>/</span>' + component
+            }
+            title.html(paths)
+        };
+
+        titleCrumbs();
+
         this._handle.on('mousedown', e => {
             dblClick = false;
             handleClicks++;
