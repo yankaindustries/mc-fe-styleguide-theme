@@ -37,7 +37,7 @@ class Pen {
             let title = $('.Pen-title')
             let parts = title.attr('data-path').split('/');
             let start = parts.indexOf('components') + 1;
-            let component = parts.pop().replace('.slim','');
+            let component = parts.pop().replace('.slim','').replace('-', ' ').replace(/[^a-zA-Z\s]+/g, '').trim();
             let path = parts.slice(start)
             let paths = path.map((str) => {
                 return str.replace('-', ' ').replace(/[^a-zA-Z\s]+/g, '').trim();
