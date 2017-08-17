@@ -1,4 +1,5 @@
 <img class="mc-logo" src="/theme/mc-home-logo.svg"/>
+<a href="https://github.com/yankaindustries/mc-fe-styles" class="mc-version">mc-fe-styles v{{ frctl.theme.get('version') }}</a>
 <nav class="Navigation">
 {% for navPartial in frctl.theme.get('nav') %}
     {% include 'partials/navigation/' + navPartial + '.nunj' %}

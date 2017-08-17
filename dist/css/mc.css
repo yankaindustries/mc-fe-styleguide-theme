@@ -2347,7 +2347,15 @@ body {
 .mc-logo {
   display: block;
   width: 75%;
-  margin: -20px auto 10px; }
+  margin: -20px auto -23px; }
+
+.mc-version {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px; }
+  .mc-version:hover {
+    background: transparent; }
 
 [dir="ltr"] .Frame-handle {
   pointer-events: none;

@@ -17,7 +17,7 @@ module.exports = function(options){
         static: {
             mount: 'themes/mandelbrot',
         },
-        version: packageJSON.version,
+        version: 'foo',
         favicon: null
     });
 
