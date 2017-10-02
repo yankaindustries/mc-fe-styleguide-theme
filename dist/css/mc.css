@@ -2357,6 +2357,9 @@ body {
   .mc-version:hover {
     background: transparent; }
 
+.Navigation {
+  width: 240px; }
+
 [dir="ltr"] .Frame-handle {
   pointer-events: none;
   display: none; }
@@ -2381,7 +2384,10 @@ a {
   background: #111; }
 
 .Status-dot {
-  background: transparent; }
+  background: transparent;
+  border-width: 4px;
+  margin-top: 1px;
+  margin-left: 2px; }
 
 .Tree-title {
   font-family: 'lato';
