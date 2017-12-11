@@ -1,6 +1,6 @@
 {
   "name": "@masterclass/mc-fe-styleguide-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Masterclass theme for fractal styleguide",
   "main": "index.js",
   "repository": {
